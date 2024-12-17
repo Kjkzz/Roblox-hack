@@ -17,8 +17,16 @@ button.Position = UDim2.new(0.1, 0, 0.4, 0)  -- Posição do botão
 button.Text = "Clique aqui!"  -- Texto do botão
 button.Parent = frame
 
+local cornerframe = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 20)  -- Define o raio de arredondamento
+corner.Parent = frame
+
 -- Função que será chamada quando o botão for clicado
 button.MouseButton1Click:Connect(function()
     game:GetService("Players").LocalPlayer:Kick("Tu e burro?")
     -- Ação adicional, como dar recursos, etc.
-end)
+local cornerbotao = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 20)  -- Define o raio de arredondamento
+corner.Parent = button
+    
+    end)
